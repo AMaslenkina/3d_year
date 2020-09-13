@@ -1,0 +1,24 @@
+<html>
+ <head>
+     <meta charset = 'utf-8' />
+ </head>
+    <body>
+      <script type='text/javascript'>
+          var a = prompt('Введите строку');
+          var str = a.split('');
+          var z = str[4];
+          var x = 0;
+          if(a.length != 19){
+              alert('Введите строку с другим количеством символов (20)')
+          } else{       
+       for(var i in str){
+           if(str[i] == z){
+            x++;
+           }
+        }
+        alert('В вашей строке ' + x + ' раза повторяется символ под номером 5');
+        }  
+      
+      </script>    
+  </body>
+</html>

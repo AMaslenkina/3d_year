@@ -1,0 +1,22 @@
+<html>
+ <head>
+ </head>
+    <body>
+      <script type='text/javascript'>
+       var a = prompt('Vvedite vashy familiu');
+       alert('Vasha familia sostoit iz '+ a.length + ' simvolov');
+       var b = ('eyuioajEYUIOAJ');
+          var str = a.split('');
+          var z = b.split('');
+          var x = 0;
+       for(var i in str){
+        for(var j in z){
+          if(str[i] == z[j]) {
+            x++;
+          }
+        }  
+      }
+      alert('Vasha familia sostoit iz '+ x + ' glasnyh i ' + (a.length - x) + ' soglasnyh');
+      </script>    
+  </body>
+</html>
