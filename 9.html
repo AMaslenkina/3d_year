@@ -1,0 +1,20 @@
+<html>
+ <head>
+     <meta charset = 'utf-8'/>
+ </head>
+    <body>
+      <script type='text/javascript'>
+      var date = new Date();
+      var hours = date.getHours();
+      var min = date.getMinutes();
+      var time = hours + min/100;
+      if(hours >=7 && hours <=8){alert('Время завтрака');}
+      if(hours >=13 && hours <=14){alert('Время обеда');}
+      if(hours >=19 && hours <=20){alert('Время ужина');}
+      if(hours >=9 && hours <=18){alert('Время работы');}
+      if(hours >=18 && hours <=23){alert('Время отдыха');}
+      if(hours >=23 && hours <=6.3){alert('Время сна');}
+alert(date);
+      </script>    
+  </body>
+</html>
