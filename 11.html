@@ -1,0 +1,31 @@
+<html>
+ <head>
+     <meta charset = 'utf-8'/>
+ </head>
+    <body>
+      <script type='text/javascript'>
+     var str = prompt('Введите строку');
+     str = str.replace(/[^\w\s]|_/g, "").replace(/\s+/g, " ");
+     var str1 = str.split(' ');
+     var count = 0;
+     var min = 999;
+     var max = 0;
+     var y =[];
+     for(i in str1){
+         y.push(str1[i].length);
+        }
+    for(i in y){
+         if(y[i]>max){
+             max = y[i];
+         }
+         if(y[i]<min){
+             min = y[i];
+         }
+         count = count +y[i];
+        }
+        var avg = count/str1.length;
+
+    alert('Длина строки состоит из ' + (str1.length) + ' слов' + '\nСамое длинное слово содержит ' + max + ' букв' +'\nСамое короткое слово содержит ' + min +' букв' + '\nСредняя длина ' + avg.toFixed(1) +'слов');
+      </script>    
+  </body>
+</html>
