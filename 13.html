@@ -1,0 +1,42 @@
+<html>
+ <head>
+  <meta charset = 'utf-8'/>
+ </head>
+    <body>
+      <script type='text/javascript'>
+      var str = prompt('Введите электронную почту');
+      var a = str.indexOf('@');
+      var d = str.slice(0,a);
+      var b = str.slice(a);
+      var dot = b.indexOf('.');
+      var sdot1 = b.slice(dot);
+      var s2 = b.slice(0, dot);
+      if(a == -1){
+          alert('Не хватает "@"');
+      } else {
+          if(str.length <= 6){
+              alert('Недостаточно символов');
+          } else {
+              if(d.length <=1){
+                  alert('Недостаточно символов перед "@"');
+              }else {
+                if(dot == -1){
+                  alert('Не хватает точки после "@"');
+              }else {
+                  if(sdot1.length <= 2){
+                    alert('Не хватает символов после "."');
+                  }else {
+                      if(s2.length <=1){
+                          alert('Не хватает символов между "@" и "."');
+                      }else {
+                    alert('Ты справился');
+                      }
+                    } 
+                  }
+              }
+          }
+      }
+
+      </script>    
+  </body>
+</html>
