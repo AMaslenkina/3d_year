@@ -1,0 +1,18 @@
+<html>
+ <head>
+  <meta charset = 'utf-8'/>
+ </head>
+    <body>
+      <script type='text/javascript'>
+      var str = prompt('Введите строку');
+      var l = str.length;
+      var srstr = Math.floor(l/2);
+      for(var i = 0; i< srstr; i++){
+        if (str[i] !== str[l-1-i]){
+          alert('Строка не является полиндромом');
+        }
+      }
+      alert('Строка является полиндромом');
+      </script>    
+  </body>
+</html>
