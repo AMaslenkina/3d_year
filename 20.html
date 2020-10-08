@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <script type='text/javascript'>
+        var n = prompt('Введите n');
+        var arr = [];
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        for (var i = 0; i <= n; i++) {
+            var x = getRandomInt(0, 10);
+            arr.push(x);
+        }
+        alert(arr);
+    </script>
+</body>
+
+</html>

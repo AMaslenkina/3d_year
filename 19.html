@@ -1,0 +1,17 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <script type='text/javascript'>
+        var str = prompt('Введите строку');
+        var set = new Set();
+        for (var s in str) {
+            set.add(str[s]);
+        }
+        arr = Array.from(set);
+        arr = arr.join(",");
+    alert(arr);
+    </script>
+</body>
+</html>
